@@ -10,9 +10,38 @@ body{
 nav{
     display: flex;
     justify-content: center;
+    
+    background-color: #333;
+    overflow: hidden;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    
 }
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 15px;
+  }
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+  }
 a{
-    margin: 20px;
+    margin: 10px;
     text-decoration: none;
     color: black;
 
